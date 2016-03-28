@@ -1,0 +1,13 @@
+web:
+  build: .
+  ports:
+    - "80:8000"
+  links:
+    - "session:redis"
+    - "db:mongo"
+
+session:
+  image: redis
+
+db:
+  image: mongo

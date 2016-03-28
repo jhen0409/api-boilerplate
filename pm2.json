@@ -1,0 +1,11 @@
+{
+  "apps": [
+    {
+      "name": "API",
+      "script": "build/index.js",
+      "env": {
+        "NODE_ENV": "production"
+      }
+    }
+  ]
+}
