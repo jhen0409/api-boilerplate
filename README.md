@@ -1,4 +1,4 @@
-# API Boilerplate [![Build Status](https://travis-ci.org/jhen0409/api-boilerplate.svg)](https://travis-ci.org/jhen0409/api-boilerplate) [![Dependency Status](https://david-dm.org/jhen0409/api-boilerplate.svg)](https://david-dm.org/jhen0409/api-boilerplate) [![devDependency Status](https://david-dm.org/jhen0409/api-boilerplate/dev-status.svg)](https://david-dm.org/jhen0409/api-boilerplate#info=devDependencies)
+# API Boilerplate [![Build Status](https://travis-ci.org/jhen0409/api-boilerplate.svg)](https://travis-ci.org/jhen0409/api-boilerplate) [![Test coverage](https://coveralls.io/repos/jhen0409/api-boilerplate/badge.svg?branch=master&service=github)](https://coveralls.io/r/jhen0409/api-boilerplate?branch=master) [![Dependency Status](https://david-dm.org/jhen0409/api-boilerplate.svg)](https://david-dm.org/jhen0409/api-boilerplate) [![devDependency Status](https://david-dm.org/jhen0409/api-boilerplate/dev-status.svg)](https://david-dm.org/jhen0409/api-boilerplate#info=devDependencies)
 
 > A RESTful API boilerplate with Koa for personal usage
 
@@ -19,14 +19,14 @@ $ npm install
 #### Development
 
 ```bash
-npm run dev
+$ npm run dev
 ```
 
 #### Production
 
 ```bash
-npm run build
-npm start
+$ npm run build
+$ npm start
 ```
 
 ## Docker

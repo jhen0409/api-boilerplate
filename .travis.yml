@@ -21,7 +21,6 @@ addons:
       - mongodb-org-tools
 
 before_script:
-  - sleep 15
   - mongo --version
 
 install:
@@ -29,4 +28,7 @@ install:
 
 script:
   - npm run lint
-  - npm test
+  - npm run test-cov
+
+after_script:
+  - "npm i -g coveralls && coveralls < coverage/lcov.info"

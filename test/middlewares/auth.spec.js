@@ -5,12 +5,11 @@ import { setupModels } from '../func';
 import { mustLogin } from '../../src/middlewares/auth';
 import { returnCode } from '../../src/utils';
 
-const middleware = mustLogin();
-
 describe('Auth middlewares', () => {
   describe('mustLogin', function () {
     this.timeout(5000);
 
+    const middleware = mustLogin();
     let User;
     before(() => {
       setupModels();
