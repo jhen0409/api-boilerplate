@@ -1,4 +1,4 @@
 export default [
-  require('./version'),
-  require('./user'),
+  require('./version').default,
+  require('./user').default,
 ];

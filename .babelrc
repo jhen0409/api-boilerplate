@@ -1,4 +1,4 @@
 {
   "presets": ["es2015-node-auto", "stage-0"],
-  "plugins": ["add-module-exports", "transform-decorators-legacy", "closure-elimination"]
+  "plugins": ["transform-decorators-legacy", "closure-elimination"]
 }
