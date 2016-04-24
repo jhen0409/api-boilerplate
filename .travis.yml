@@ -24,6 +24,8 @@ install:
 
 script:
   - npm run lint
+  - npm run build
+  - ls -l build/server.js
   - npm run test-cov
 
 after_script:
