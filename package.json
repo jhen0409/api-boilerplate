@@ -4,7 +4,7 @@
   "description": "A RESTful API boilerplate with Koa for personal usage",
   "main": "index.js",
   "scripts": {
-    "lint": "eslint --ignore-pattern build --ignore-pattern coverage .",
+    "lint": "eslint src test",
     "test": "NODE_ENV=test mocha --recursive --compilers js:babel-core/register -r co-mocha -r ./test/setup 'test/**/*.spec.js'",
     "test-cov": "NODE_ENV=test babel-node node_modules/.bin/isparta cover node_modules/.bin/_mocha --report lcovonly -- --recursive -r co-mocha -r ./test/setup 'test/**/*.spec.js'",
     "dev": "NODE_ENV=development nodemon -i test --debug -- -r babel-core/register src/index.js",
