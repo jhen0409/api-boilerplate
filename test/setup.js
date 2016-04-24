@@ -1,4 +1,3 @@
-import 'babel-polyfill';
 import mongoose from 'mongoose';
 import { db } from '../src/configs';
 
