@@ -1,10 +1,9 @@
-const logger = require('nlogger').logger(module);
-
 import * as configs from './configs';
 import Koa from 'koa';
 import log from 'koa-logger';
 import body from 'koa-bodyparser';
 import session from 'koa-generic-session';
+import redisStore from 'koa-redis';
 import convert from 'koa-convert';
 import routers from './routes';
 
@@ -17,7 +16,7 @@ app.use(log());
 app.use(body());
 
 app.use(convert(session({
-  store: require('koa-redis')({
+  store: redisStore({
     host: configs.session.host,
     port: configs.session.port,
   }),
@@ -32,4 +31,4 @@ for (const router of routers) {
 const port = configs.site.port;
 
 app.listen(port);
-logger.info(`listening on port ${port}`);
+console.log(`listening on port ${port}`);

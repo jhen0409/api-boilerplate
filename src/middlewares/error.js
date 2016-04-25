@@ -1,5 +1,3 @@
-const logger = require('nlogger').logger(module);
-
 import { returnCode } from '../utils';
 
 export const error = () => async (ctx, next) => {
@@ -11,7 +9,7 @@ export const error = () => async (ctx, next) => {
     let result = ex;
     if (ex.message === 'JSONSchema errors') {
       if (process.env.NODE_ENV === 'development') {
-        logger.info('Schema errors: ', ctx.schemaErrors);
+        console.log('Schema errors: ', ctx.schemaErrors);
       }
       result = {
         type: 'return',
@@ -26,7 +24,7 @@ export const error = () => async (ctx, next) => {
         };
         break;
       default:
-        logger.error(result.stack);
+        console.error(result.stack);
         ctx.body = {
           success: false,
           ...returnCode.err.undefine,
