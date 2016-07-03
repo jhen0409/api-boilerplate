@@ -5,7 +5,7 @@
     "node": true
   },
   "rules": {
-    "no-param-reassign": 0,
+    "no-param-reassign": ["error", { "props": false }],
     "no-throw-literal": 0,
     "func-names": 0,
     "consistent-return": 0,
