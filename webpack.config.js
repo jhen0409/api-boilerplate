@@ -7,7 +7,7 @@ module.exports = {
   output: {
     path: path.join(__dirname, 'build'),
     filename: 'server.js',
-    libraryTarget: 'commonjs2'
+    libraryTarget: 'commonjs2',
   },
   plugins: [
     new webpack.IgnorePlugin(/\.(md)$/),
@@ -17,32 +17,30 @@ module.exports = {
       { raw: true, entryOnly: false }
     ),
     new webpack.DefinePlugin({
-      'process.env': {
-        NODE_ENV: JSON.stringify('production')
-      }
-    })
+      'process.env.NODE_ENV': JSON.stringify('production'),
+    }),
   ],
   resolve: {
-    extensions: ['', '.js']
+    extensions: ['', '.js'],
   },
   module: {
     loaders: [{
       test: /\.js$/,
       loaders: ['babel-loader'],
-      exclude: /node_modules/
+      exclude: /node_modules/,
     }, {
       test: /\.json$/,
-      loader: 'json'
-    }]
+      loader: 'json',
+    }],
   },
   target: 'node',
   node: {
     __dirname: true,
-    __filename: true
+    __filename: true,
   },
   externals: [
     'bcrypt',
     'mongoose',
-    'redis'
-  ]
+    'redis',
+  ],
 };
