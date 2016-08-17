@@ -42,5 +42,6 @@ module.exports = {
     'bcrypt',
     'mongoose',
     'redis',
+    'any-promise',
   ],
 };
