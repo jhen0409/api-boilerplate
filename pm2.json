@@ -2,7 +2,7 @@
   "apps": [
     {
       "name": "API",
-      "script": "build/index.js",
+      "script": "build/server.js",
       "env": {
         "NODE_ENV": "production"
       }
