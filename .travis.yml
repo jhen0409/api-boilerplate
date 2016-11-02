@@ -5,7 +5,7 @@ node_js:
   - "7"
 cache:
   directories:
-    - node_modules
+    - $HOME/.yarn-cache
 env:
   - CXX=g++-4.8
 addons:
@@ -25,13 +25,14 @@ before_script:
   - mongo --version
 
 install:
-  - npm install
+  - npm install -g yarnpkg
+  - yarn install
 
 script:
-  - npm run lint
-  - npm run build
+  - yarn run lint
+  - yarn run build
   - ls -l build/server.js
-  - npm run test-cov
+  - yarn run test-cov
 
 after_success:
-  - "npm i -g coveralls && npm run coverage"
+  - "yarn global coveralls && yarn run coverage"
