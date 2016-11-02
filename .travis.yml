@@ -6,6 +6,8 @@ node_js:
 cache:
   directories:
     - $HOME/.yarn-cache
+    - $(npm root -g)
+    - node_modules
 env:
   - CXX=g++-4.8
 addons:
