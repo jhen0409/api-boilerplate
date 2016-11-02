@@ -33,13 +33,7 @@ $ npm start
 
 #### Development on local
 
-__*[OS X]*__ If you're using Docker ToolBox (or Boot2Docker) in development mode, you should use [docker-osx-dev](https://github.com/brikis98/docker-osx-dev):
-
-```bash
-$ docker-osx-dev -e node_modules -e .git -e build
-```
-
-Waiting [Docker for OS X/Windows beta](https://beta.docker.com/) release, we will not need `docker-osx-dev` in the future.
+Use [Docker](https://www.docker.com/products/docker) for development.
 
 ```bash
 $ docker-compose -f docker-compose.dev.yml up
@@ -57,17 +51,14 @@ $ docker-compose up
 First start MongoDB, and run:
 
 ```bash
-$ npm test
-# watch
-$ npm test -- --watch
-# get code coverage report
-$ npm run test-cov
-```
-
-#### Lint
-
-```bash
+# Lint
 $ npm run lint
+# Test
+$ npm test
+# Watch test
+$ npm test -- --watch
+# Get code coverage report
+$ npm run test-cov
 ```
 
 ## License
