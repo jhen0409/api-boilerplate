@@ -11,7 +11,7 @@
 ## Installation
 
 ```bash
-$ npm install
+$ yarn install
 ```
 
 ## Usage
@@ -19,14 +19,14 @@ $ npm install
 #### Development
 
 ```bash
-$ npm run dev
+$ yarn run dev
 ```
 
 #### Production
 
 ```bash
-$ npm run build
-$ npm start
+$ yarn run build
+$ yarn start
 ```
 
 ## Docker
@@ -42,7 +42,7 @@ $ docker-compose -f docker-compose.dev.yml up
 #### Production
 
 ```bash
-$ npm run build
+$ yarn run build
 $ docker-compose up
 ```
 
@@ -52,13 +52,13 @@ First start MongoDB, and run:
 
 ```bash
 # Lint
-$ npm run lint
+$ yarn run lint
 # Test
-$ npm test
+$ yarn test
 # Watch test
-$ npm test -- --watch
+$ yarn test -- --watch
 # Get code coverage report
-$ npm run test-cov
+$ yarn run test-cov
 ```
 
 ## License
