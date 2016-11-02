@@ -4,7 +4,7 @@
 
 ## Prerequisite
 
-* Node.js ^5.x
+* Node.js ^6.x
 * MongoDB ^3.x
 * Redis ^3.x
 
