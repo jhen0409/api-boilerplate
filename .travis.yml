@@ -25,7 +25,7 @@ before_script:
   - mongo --version
 
 install:
-  - npm install -g yarnpkg
+  - npm install -g yarn
   - yarn install
 
 script:
