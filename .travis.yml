@@ -32,5 +32,5 @@ script:
   - ls -l build/server.js
   - npm run test-cov
 
-after_script:
-  - "npm i -g coveralls && coveralls < coverage/lcov.info"
+after_success:
+  - "npm i -g coveralls && npm run coverage"
