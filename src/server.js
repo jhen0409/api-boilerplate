@@ -21,6 +21,7 @@ app.use(convert(session({
     port: configs.session.port,
   }),
   prefix: configs.session.prefix,
+  ttl: 1000 * 3600 * 24,
 })));
 
 for (const router of routers) {
